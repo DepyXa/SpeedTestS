@@ -15,7 +15,7 @@ except ModuleNotFoundError:
 try:
 	import speedtest
 except ModuleNotFoundError:
-	os.system("pip install speedtest")
+	os.system("pip install speedtest-cli")
 	import speedtest
 clears()
 init(autoreset=True)
