@@ -10,12 +10,12 @@ def clears():
 try:
 	from colorama import init, Fore, Back, Style
 except ModuleNotFoundError:
-	os.system("pip install colorama")
+	os.system("pip install colorama --progress-bar off")
 	from colorama import init, Fore, Back, Style
 try:
 	import speedtest
 except ModuleNotFoundError:
-	os.system("pip install speedtest-cli")
+	os.system("pip install speedtest-cli --progress-bar off")
 	import speedtest
 clears()
 init(autoreset=True)
