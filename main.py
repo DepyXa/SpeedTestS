@@ -27,9 +27,7 @@ def listsum(numList):
         return numList[0] + listsum(numList[1:])
 
 def starttest(n):
-	sd = []
-	su = []
-	sp = []
+	sd, su, sp = [], [], []
 	for x in range(n):
 		x = x+1
 		print(Fore.YELLOW + f"Testing {x}...")
